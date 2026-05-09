@@ -10,7 +10,7 @@ const otpSchema = new Schema({
         ref: "users",
         required: [true, "User is required"]
     },
-    optHash: {
+    otpHash: {
         type: String,
         required: [true, "OTP is required"]
     }
