@@ -7,6 +7,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+.pnpm-debug.log*
 logs/
 *.log
 
@@ -31,6 +32,7 @@ node_repl_history
 # dotenv environment variables
 .env
 .env.*
+.env*
 
 # macOS
 .DS_Store
@@ -41,8 +43,36 @@ node_repl_history
 # OS generated files
 Thumbs.db
 
-# Package lock files (optional per project management)
-# Uncomment only if you want to ignore all package locks across the repo
+# Generated files
+/src/generated/prisma
+
+# Yarn
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
+*.pem
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Package lock files (optional - commented out)
 # package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
